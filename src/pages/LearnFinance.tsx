@@ -134,15 +134,17 @@ const LearnFinance = () => {
             <div className="flex items-center space-x-1 overflow-x-auto">
               {tabs.map((tab) => {
                 const Icon = tab.icon
+                const isAdminTab = tab.id === 'admin'
                 return (
                   <Button
                     key={tab.id}
-                    variant={activeTab === tab.id ? 'default' : 'ghost'}
+                    variant={activeTab === tab.id ? 'default' : isAdminTab ? 'secondary' : 'ghost'}
+                    size={isAdminTab ? 'lg' : 'default'}
                     onClick={() => {
                       setActiveTab(tab.id)
                       setShowSubmissionForm(false)
                     }}
-                    className="relative whitespace-nowrap"
+                    className={`relative whitespace-nowrap ${isAdminTab ? 'ml-2 font-semibold border border-primary text-primary' : ''}`}
                   >
                     <Icon className="h-4 w-4 mr-2" />
                     {tab.label}

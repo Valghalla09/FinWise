@@ -281,7 +281,7 @@ const AdminDashboard = () => {
                 placeholder="Enter rejection reason..."
                 value={rejectReason}
                 onChange={(e) => setRejectReason(e.target.value)}
-                className="w-full p-3 border border-border rounded-lg resize-none"
+                className="w-full p-3 border border-border rounded-lg resize-none bg-background text-foreground placeholder:text-muted-foreground"
                 rows={4}
               />
               <div className="flex items-center justify-end gap-3 mt-4">
