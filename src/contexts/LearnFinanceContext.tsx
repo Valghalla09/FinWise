@@ -18,7 +18,7 @@ import { type FinancePost, type PostFormData, type UserContribution, type AdminS
 import { DEFAULT_LEARNING_POSTS } from '@/data/defaultLearningContent'
 
 // Replace with your actual admin UID
-const ADMIN_UID = 'F1LU9OJCvfYhQN4mnbrPzLq8ytF3' // You'll need to replace this with your actual Firebase UID
+const ADMIN_UID = 's1mVXxl7rUPCZPD39zbIYyX37M52' // You'll need to replace this with your actual Firebase UID
 
 interface LearnFinanceContextType {
   // State
